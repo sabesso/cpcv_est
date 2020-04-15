@@ -11,7 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Text
-$text = esc_html__( 'Continue Reading', 'oceanwp' );
+$text = esc_html__( 'Lire', 'oceanwp' );
 
 // Apply filters for child theming
 $text = apply_filters( 'ocean_post_readmore_link_text', $text ); ?>
