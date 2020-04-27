@@ -1,4 +1,3 @@
-
 #+PHPVersion
 #="php70"
 AddHandler x-httpd-php70 .php
@@ -8,5 +7,16 @@ AddHandler x-httpd-php70 .php
 # Les directives (lignes) entre 'BEGIN WordPress' et 'END WordPress' sont
 # généré dynamiquement, et ne doivent uniquement être modifiées via les filtres WordPress.
 # Toute modification des directives entre ces marqueurs sera outrepassée.
+<<<<<<< HEAD
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /wordpress/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /wordpress/index.php [L]
+</IfModule>
+=======
+>>>>>>> 47fefe1c20b55784d3d9f957aed6c465783bd549
 
 # END WordPress
